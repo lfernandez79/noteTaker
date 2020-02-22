@@ -1,24 +1,15 @@
 {
-  "name": "noteTaker",
+  "name": "note-taker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lfernandez79/noteTaker.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lfernandez79/noteTaker/issues"
-  },
-  "homepage": "https://github.com/lfernandez79/noteTaker#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "requirer": "0.0.4"
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
   }
 }
