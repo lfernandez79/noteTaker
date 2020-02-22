@@ -29,4 +29,5 @@ module.exports = function (app) {
         saveNotes.splice(index, (1));
         res.json(saveNotes);
     });
+
 };
