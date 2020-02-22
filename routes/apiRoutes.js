@@ -14,11 +14,11 @@ module.exports = function (app) {
         var newNote = (req.body);
         console.log(newNote);
 
-        savedNotes.push(newNote);
+        saveNotes.push(newNote);
         req.body.index = saveNotes.length;
         res.json(newNote);
 
-        fs.writeFile(savedNotes, newNote, "utf8", function (err) {
+        fs.writeFile(saveNotes, newNote, "utf8", function (err) {
             if (err) throw err;
         });
     });
@@ -27,6 +27,6 @@ module.exports = function (app) {
     app.delete("/api/notes/:id", function (req, res) {
         const index = saveNotes.indexOf(saveNotes);
         saveNotes.splice(index, (1));
-        res.json(savedNotes);
+        res.json(saveNotes);
     });
 };
